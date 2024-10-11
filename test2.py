@@ -5,7 +5,7 @@ from vosk import Model, KaldiRecognizer
 # Убедитесь, что ваш аудиофайл имеет формат WAV с частотой дискретизации 16kHz и моно
 def recognize_speech_vosk(file_path):
     # Загружаем русскую модель (скачать можно по ссылке ниже)
-    model = Model("vosk-model-small-ru-0.22/vosk-model-small-ru-0.22")  # Укажите путь к модели
+    model = Model("vosk-model-small-ru-0.22")  # Укажите путь к модели
 
     # Открываем аудиофайл
     wf = wave.open(file_path, "rb")
